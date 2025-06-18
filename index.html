@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Pet Watch - Tecnología para el cuidado de tu mascota</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f2f2f2;
+    }
+
+    header {
+      background-color: #2c3e50;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 36px;
+    }
+
+    header p {
+      margin: 10px 0 0;
+      font-size: 18px;
+    }
+
+    nav {
+      background-color: #34495e;
+      padding: 15px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      max-width: 900px;
+      margin: 40px auto;
+      background-color: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: #2c3e50;
+      margin-top: 0;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+      padding-left: 20px;
+      position: relative;
+    }
+
+    ul li::before {
+      content: "✅";
+      position: absolute;
+      left: 0;
+    }
+
+    form input, form label {
+      display: block;
+      width: 100%;
+      margin-bottom: 15px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="number"] {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    input[type="submit"] {
+      background-color: #2c3e50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #1a252f;
+    }
+
+    footer {
+      background-color: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 600px) {
+      nav a {
+        display: block;
+        margin: 10px 0;
+      }
+
+      section {
+        margin: 20px;
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Pet Watch</h1>
+    <p>Tecnología para el cuidado de tu mascota</p>
+  </header>
+
+  <nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#como-funciona">¿Cómo funciona?</a>
+    <a href="#tienda">Tienda</a>
+    <a href="#registro">Registro</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <section id="inicio">
+    <h2>Bienvenido a Pet Watch</h2>
+    <p>En Pet Watch desarrollamos soluciones inteligentes para proteger y cuidar a tus mascotas. Nuestros collares inteligentes te permiten monitorear su ubicación, salud y seguridad en todo momento.</p>
+  </section>
+
+  <section id="como-funciona">
+    <h2>¿Cómo funciona Pet Watch?</h2>
+    <ul>
+      <li>Localización GPS en tiempo real para evitar pérdidas</li>
+      <li>Sensor de ritmo cardíaco y temperatura corporal</li>
+      <li>Alarma de proximidad si tu mascota se aleja demasiado</li>
+      <li>Historial médico digital con alertas de vacunas y citas</li>
+    </ul>
+  </section>
+
+  <section id="tienda">
+    <h2>Tienda</h2>
+    <p>Muy pronto podrás adquirir nuestros collares inteligentes y kits de identificación desde esta página. ¡Mantente atento a nuestras novedades!</p>
+  </section>
+
+  <section id="registro">
+    <h2>Registro de Mascotas</h2>
+    <form>
+      <label for="nombre">Nombre de la mascota:</label>
+      <input type="text" id="nombre" name="nombre" required>
+
+      <label for="raza">Raza:</label>
+      <input type="text" id="raza" name="raza" required>
+
+      <label for="edad">Edad:</label>
+      <input type="number" id="edad" name="edad" min="0" required>
+
+      <label for="correo">Correo de contacto:</label>
+      <input type="email" id="correo" name="correo" required>
+
+      <input type="submit" value="Registrar">
+    </form>
+  </section>
+
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <p>¿Tienes dudas o sugerencias? Contáctanos:</p>
+    <p>📧 Correo: <strong>petwatchcochabamba@gmail.com</strong></p>
+    <p>📱 WhatsApp: +591 70000000</p>
+    <p>📍 Ubicación: Cochabamba, Bolivia</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 PetWatch. Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>
